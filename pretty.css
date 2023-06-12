@@ -1,0 +1,498 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 5px 30px;
+}
+
+/* Site Title Styles */
+.site-title {
+  z-index: 9999;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.site-title h1 {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+/* Subtitle Styles */
+.subtitle {
+  position: absolute;
+  bottom: -380px;
+  right: -780px;
+  padding: 290px;
+  color: rgba(143, 106, 106, 0.8);
+}
+
+/* Contact Page Styles */
+h1 {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact-info > div {
+  margin-right: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Gallery Page Styles */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.gallery-item {
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.floating-card {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.floating-card h2 {
+  margin-top: 0;
+}
+
+.floating-card p {
+  margin-bottom: 0;
+}
+
+/* Booking Page Styles */
+.calendar-container {
+  float: right;
+  margin-right: 20px;
+}
+
+.calendar {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.calendar h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  padding: 5px;
+  text-align: center;
+}
+
+.calendar .empty {
+  background-color: #f8f8f8;
+}
+
+.calendar .available,
+.calendar .selected {
+  background-color: #c8e6c9;
+  cursor: pointer;
+}
+
+.calendar .booked,
+.calendar .unavailable {
+  background-color: #ffcdd2;
+  cursor: not-allowed;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Confirmation Page Styles */
+.confirmation-page {
+  background-color: #f1f1f1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.confirmation-details {
+  margin-bottom: 30px;
+}
+
+.confirmation-details p {
+  margin: 5px;
+}
+
+.confirmation-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Footer Styles */
+.footer {
+  z-index: 9999;
+}
+
+/* Modal Styles */
+.modal {
+  transition: top 0.3s ease-in-out;
+}
+
+.modal.show {
+  top: 150px;
+}
+
+.modal-dialog {
+  margin-top: 0;
+}
+
+/* Add this CSS code to your existing "pretty.css" file or create a new CSS file and link it in your HTML */
+
+/* Custom styles for the artist page */
+.artist-page .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.artist-page .card {
+  transition: transform 0.2s;
+}
+
+.artist-page .card:hover {
+  transform: scale(1.05);
+}
+
+.artist-page .modal-body {
+  padding: 1rem;
+}
+
+.artist-page .modal-body h6 {
+  margin-top: 1rem;
+}
+
+.artist-page .modal-body p {
+  margin-bottom: 1rem;
+}
+
+.artist-page footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.artist-page footer p {
+  margin-bottom: 5px;
+}
+.artist-page .card-body {
+  margin-top: 20px; /* Adjust the value as needed */
+}
+
+.artist-page .modal-body h6 {
+  margin-top: 10px; /* Adjust the value as needed */
+}
+.artist-page .card {
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+}
+
+.home-page {
+  background-color: #f1f1f1;
+}
+
+.home-page header {
+  position: relative;
+  height: 500px;
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.home-page .site-title {
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+  text-align: left;
+  color: #fff;
+  width: 50%;
+  padding-right: 20px;
+}
+
+.home-page .site-title h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.home-page .site-title .subtitle {
+  font-size: 18px;
+}
+
+.home-page .about-us {
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  text-align: left;
+  color: #fff;
+  width: 40%;
+  padding-left: 20px;
+}
+
+.home-page .about-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-page .about-us p {
+  margin-bottom: 20px;
+}
+
+.home-page .content {
+  padding: 40px;
+  text-align: center;
+}
+
+.home-page .content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home-page .content p {
+  margin-bottom: 20px;
+}
+
+.home-page .content .btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-page .content .btn:hover {
+  background-color: #555;
+}
+.contacting {
+  background-color: #f1f1f1;
+}
+
+.contacting h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 32px;
+  color: #333;
+}
+
+.contacting .contact-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Adjust the value as needed */
+}
+
+.contacting .contact-info > div {
+  margin-right: 50px; /* Adjust the value as needed */
+}
+
+.contacting .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px; /* Adjust the value as needed */
+}
+
+.contacting .form-group {
+  margin-bottom: 20px;
+}
+
+.contacting label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+.contacting input[type="text"],
+.contacting input[type="email"],
+.contacting textarea {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contacting textarea {
+  height: 120px;
+}
+
+.contacting button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contacting button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.contacting .title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}

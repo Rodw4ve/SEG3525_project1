@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmation - Bakeneko Tattoo Parlor</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Navigation Bar Styles */
+    .navigation-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5px;
+      margin: 0;
+    }
+
+    .menu li {
+      margin: 0 10px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu li a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 5px 30px;
+    }
+
+    /* Confirmation Page Styles */
+    .confirmation-section {
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    .confirmation-section h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .confirmation-section p {
+      margin: 5px;
+    }
+
+    .confirmation-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .confirmation-icon img {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* Footer Styles */
+    .footer {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px); /* For Safari */
+      z-index: 9999;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navigation-bar">
+      <div class="logo">
+        <a href="home.html">
+          <img src="japan logo.webp" alt="Logo">
+        </a>
+      </div>
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="confirmation-section">
+    <h1>Reservation Confirmed</h1>
+    <div class="confirmation-details">
+      <p>Confirmation Number: #1234567890</p>
+      <p>Thank you for booking with Bakeneko Tattoo Parlor!</p>
+      <p>We have received your request and will be contacting you soon.</p>
+    </div>
+    <div class="confirmation-icon">
+      <img src="checkmark.webp" alt="Confirmation Icon">
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3 fixed-bottom">
+    <div class="container-fluid text-center">
+      <div class="row justify-content-center align-items-center">
+        <div class="col">
+          <h3 class="mb-0">Bakeneko Tattoo Parlor</h3>
+        </div>
+        <div class="col">
+          <p class="mb-0">123 Tattoo Street, Ottawa, Canada</p>
+          <p class="mb-0">Phone: 613-403-5524</p>
+          <p class="mb-0">Hours: Monday - Saturday: 10am - 8pm</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
